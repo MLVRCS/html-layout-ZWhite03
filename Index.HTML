@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dolls</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: Violet;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 100px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 10%;
+    height: auto;
+  }
+}
+</style>
+
+<header>
+  <h2>Different Dolls</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Porcelain Dolls</a></li>
+      <li><a href="#">Nesting Dolls</a></li>
+      <li><a href="#">Barbie</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Porcelain</h1>
+    <p>Theses doll first appered in the Mid 1800's in Europe. These dolls popular children toys that later became collectibles. The way to find out how old these dolls are is the cracks. If the doll  heavier crack it shows that the doll is very old.</p>
+    <p>Porcelain dolls are made of bisque porceliain  which is a porcelain that is unglazed and matte. There also very fragile doll so make sure to hold them the right way. </p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
